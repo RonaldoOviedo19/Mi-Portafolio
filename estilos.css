@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Macondo&family=Praise&family=Road+Rage&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: Boogaloo;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color1: #beed80;
+    --color2: #59d999;
+    --color3: #31ada1;
+    --color4: #51647a;
+    --color5: #1f1e1e;
+    --color6: #ffffff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.contenedor-header{
+    background: var(--color3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a{
+    font-family: Praise;
+    font-size: 36px;
+    color: var(--color1);
+    text-decoration: none;
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: var(--color4);
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover{
+    color: var(--color6);
+}
+
+.nav-responsive{
+    background-color: var(--color1);
+    color: var(--color6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.inicio{
+    background: linear-gradient(to top, rgba(30, 35, 38, .8),rgba(30, 35, 38, 1)),url(mifondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: var(--color2);
+    display: flex;
+    align-items: center;
+}
+
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: var(--color5);
+    max-width: 450px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 6px solid var(--color3);
+    border-radius: 100%;
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 50px;
+    font-family: Boogaloo;
+}
+
+.inicio .contenido-banner p{
+    padding-top: 5%;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: Macondo;
+}
+
+.inicio .contenido-banner .redes a{
+    color: var(--color1);
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid var(--color6);
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.inicio .contenido-banner .redes a:hover{
+    background-color: var(--color3);
+    width: 62px;
+    height: 62px;
+    line-height: 62px;
+    font-size: 40px;
+}
+
+.sobremi{
+    background: linear-gradient(to top, rgba(30, 35, 38, .8),rgba(30, 35, 38, 1)),url(mifondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.sobremi .contenido-seccion{
+    background-color: var(--color5);
+    width: 75%;
+    height: 90%;
+    color: var(--color2);
+    margin: 3% 0 0 12%;
+    border-radius: 30px;
+}
+
+.sobremi h2{
+    font-size: 68px;
+    font-family: Boogaloo;
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+
+.sobremi .contenido-seccion p{
+    text-align: justify;
+    font-size: 33px;
+    line-height: 35px;
+    margin: 10px 70px 60px 70px;
+}
+
+.sobremi .contenido-seccion p span{
+    font-size: 38px;
+    font-weight: bold;
+    color: var(--color6);
+}
+
+.sobremi .fila{
+    display: flex;
+}
+
+.sobremi .fila .col{
+    width: 50%;
+    margin: 0 0 2% 6%; 
+}
+
+.sobremi .fila .col h3{
+    font-size: 40px;
+    font-family: Macondo;
+    margin-bottom: 25px;
+}
+
+.sobremi .fila .col ul{
+    list-style: none;
+}
+
+.sobremi .fila .col ul li{
+    font-size: 25px;
+    font-family: Macondo;
+    margin: 12px 0;
+}
+
+.sobremi .fila .col ul li strong{
+    font-size: 30px;
+    display: inline-block;
+    color: var(--color6);
+    width: 250px;
+}
+
+.sobremi .fila .col ul li span{
+    background-color: #51647a;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses{
+    width: 140px;
+    height: 140px;
+    background-color: var(--color6);
+    border-radius: 10px;
+    margin: 0 45px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses:hover{
+    font-size: 35px;
+    margin-bottom: 15px;
+    width: 150px;
+    height: 150px;
+    background-color: var(--color1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
