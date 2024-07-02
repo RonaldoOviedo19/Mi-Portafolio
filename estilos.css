@@ -29,17 +29,16 @@ html{
 }
 
 .contenedor-header header{
-    max-width: 1100px;
-    margin: auto;
+    margin: 0 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0 15px 0;
+    padding: 5px 0;
 }
 
 .contenedor-header header .logo a{
     font-family: Praise;
-    font-size: 36px;
+    font-size: 66px;
     color: var(--color1);
     text-decoration: none;
 }
@@ -51,6 +50,7 @@ html{
 
 .contenedor-header header nav ul li a{
     text-align: none;
+    font-size: 170%;
     color: var(--color4);
     margin: 0 15px;
     padding: 3px;
@@ -62,16 +62,8 @@ html{
     color: var(--color6);
 }
 
-.nav-responsive{
-    background-color: var(--color1);
-    color: var(--color6);
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
-}
-
 .inicio{
+    padding: 170px 0;
     background: linear-gradient(to top, rgba(30, 35, 38, .8),rgba(30, 35, 38, 1)),url(mifondo.jpg);
     background-size: cover;
     height: 100vh;
@@ -81,7 +73,7 @@ html{
 }
 
 .inicio .contenido-banner{
-    padding: 20px;
+    padding: 30px;
     background-color: var(--color5);
     max-width: 450px;
     margin: auto;
@@ -90,7 +82,6 @@ html{
 }
 
 .inicio .contenido-banner img{
-    margin-top: 40px;
     border: 6px solid var(--color3);
     border-radius: 100%;
     display: block;
@@ -120,7 +111,7 @@ html{
     width: 42px;
     height: 42px;
     line-height: 42px;
-    margin: 40px 5px;
+    margin: 20px 5px;
     font-size: 20px;
     transition: .3s;
 }
@@ -409,3 +400,65 @@ html{
     width: 100%;
 }
 
+.contacto {
+    padding: 220px 0;
+    background: linear-gradient(to top, rgba(30, 35, 38, .8),rgba(30, 35, 38, 1)),url(mifondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: var(--color2);
+    display: flex;
+    align-items: center;
+}
+
+.contacto .contenido-banner{
+    padding: 30px;
+    background-color: var(--color5);
+    max-width: 450px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.contacto .contenido-banner img{
+    margin-top: 40px;
+    border: 6px solid var(--color3);
+    border-radius: 10%;
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.contacto .contenido-banner h1{
+    margin-top: 30px;
+    font-size: 40px;
+    font-family: Boogaloo;
+}
+
+.contacto .contenido-banner button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--color2);
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 20px;
+    color: var(--color6);
+    position: relative;
+    z-index: 10;
+}
+
+.contacto .contenido-banner button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--color2);
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacto .contenido-banner button:hover .overlay{ 
+    width: 100%;
+}
